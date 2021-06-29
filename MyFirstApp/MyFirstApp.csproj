@@ -54,6 +54,12 @@
       <DependentUpon>frmForEach.cs</DependentUpon>
     </Compile>
     <Compile Include="ForeachLoop\Student.cs" />
+    <Compile Include="ForLoop\frmForLoop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForLoop\frmForLoop.Designer.cs">
+      <DependentUpon>frmForLoop.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ForeachLoop\frmForEach.resx">
       <DependentUpon>frmForEach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForLoop\frmForLoop.resx">
+      <DependentUpon>frmForLoop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

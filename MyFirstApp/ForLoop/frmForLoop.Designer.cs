@@ -28,12 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.txtAge = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtSurname = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // txtAge
+            // 
+            this.txtAge.Location = new System.Drawing.Point(280, 232);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(241, 20);
+            this.txtAge.TabIndex = 9;
+            this.txtAge.TextChanged += new System.EventHandler(this.txtAge_TextChanged);
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(280, 154);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(241, 20);
+            this.txtId.TabIndex = 8;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
+            // 
+            // txtSurname
+            // 
+            this.txtSurname.Location = new System.Drawing.Point(280, 206);
+            this.txtSurname.Name = "txtSurname";
+            this.txtSurname.Size = new System.Drawing.Size(241, 20);
+            this.txtSurname.TabIndex = 7;
+            this.txtSurname.TextChanged += new System.EventHandler(this.txtSurname_TextChanged);
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(280, 180);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(241, 20);
+            this.txtName.TabIndex = 6;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(280, 273);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 5;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // frmForLoop
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtAge);
+            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.txtSurname);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.btnSave);
+            this.Name = "frmForLoop";
             this.Text = "frmForLoop";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtSurname;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Button btnSave;
     }
 }
