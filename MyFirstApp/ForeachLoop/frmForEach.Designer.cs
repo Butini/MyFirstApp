@@ -51,6 +51,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(241, 20);
             this.txtName.TabIndex = 1;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // txtSurname
             // 
@@ -58,6 +59,7 @@
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(241, 20);
             this.txtSurname.TabIndex = 2;
+            this.txtSurname.TextChanged += new System.EventHandler(this.txtSurname_TextChanged);
             // 
             // txtId
             // 
@@ -65,6 +67,7 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(241, 20);
             this.txtId.TabIndex = 3;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // txtAge
             // 
@@ -72,6 +75,7 @@
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(241, 20);
             this.txtAge.TabIndex = 4;
+            this.txtAge.TextChanged += new System.EventHandler(this.txtAge_TextChanged);
             // 
             // frmForEach
             // 
