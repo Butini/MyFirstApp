@@ -15,7 +15,7 @@ namespace MyFirstApp.WhileLoop
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            var students = new Dictionary<int, Student>();
+            var students = new Dictionary<Guid, Student>();
 
             Student student = new Student();
 
@@ -24,14 +24,16 @@ namespace MyFirstApp.WhileLoop
             student.Surname = txtSurname.Text;
             student.Age = Convert.ToInt32(txtAge.Text);
 
-            students.Add(student.StudentId, student);
+            students.Add(student.Guid, student);
 
             int i = 0;
 
             while (i < students.Count)
             {
-                KeyValuePair<int, Student> entry = students.ElementAt(i);
-                if(entry.Value.Name.Equals("Pepe")) MessageBox.Show(entry.Key + " : " + entry.Value.Name + " " + entry.Value.Surname);
+                KeyValuePair<Guid, Student> entry = students.ElementAt(i);
+                if(entry.Value.Name.Equals("Pepe")) 
+                    MessageBox.Show("Pepe is found: " + entry.Value.Name + " is welcome, and his Guid is " +
+                        entry.Value.Guid.ToString());
                 i++;
             }
 

@@ -38,6 +38,8 @@ namespace MyFirstApp.ForLoop
                 //Unboxing-Polymorphism -> Sacar un objeto de la Array
                 MessageBox.Show(studentList[i].Name + " " + studentList[i].Surname);
             }
+
+            MessageBox.Show("El número de estudiantes es : " + Student.STUDENT_COUNTER);
         }
 
         private void txtId_TextChanged(object sender, EventArgs e)
