@@ -8,6 +8,8 @@ namespace MyFirstApp.ForeachLoop
 {
     public class Student
     {
+        public Guid Guid { get; set; }
+        
         //Propiedades automaticas
         public int StudentId { get; set; }
 
@@ -17,12 +19,20 @@ namespace MyFirstApp.ForeachLoop
 
         public int Age { get; set; }
 
-        public Student()
-        {
+        public static int STUDENT_COUNTER;
 
+        static Student()
+        {
+            STUDENT_COUNTER = 0;
         }
 
-        public Student(int studentId, string name, string surname, int age)
+        public Student()
+        {
+            STUDENT_COUNTER += 1;
+            Guid = Guid.NewGuid();
+        }
+
+        public Student(int studentId, string name, string surname, int age) : this()
         {
             StudentId = studentId;
             Name = name;
